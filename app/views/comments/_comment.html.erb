@@ -1,13 +1,13 @@
-<p>
+<p class="comment">
   <strong>Commenter:</strong>
   <%= comment.commenter %>
 </p>
  
-<p>
+<p class="comment">
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
- 
+<button class="hide-button">Hide Comments</button> <button class="show-button">Show Comments</button> 
 <p>
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
