@@ -15,10 +15,13 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-  $(".hide-button").click(function(){
-    $(".comment").hide();
-  });
-  $(".show-button").click(function(){
-    $(".comment").show();
+	var togB = $('#togButton')
+  togB.click(function(){
+  	$('.comment').toggle();
+  	if (togB.text() == 'Hide Comments') {
+  		togB.text('Show Comments');
+  	} else {
+  		togB.text('Hide Comments');
+  	}
   });
 });

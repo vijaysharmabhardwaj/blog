@@ -7,8 +7,8 @@
   <strong>Comment:</strong>
   <%= comment.body %>
 </p>
-<button class="hide-button">Hide Comments</button> <button class="show-button">Show Comments</button> 
-<p>
+
+<p class="comment">
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
