@@ -1,4 +1,7 @@
-<h1>Listing Articles</h1>
+<div class="article-head">
+  <h1>Listing Articles</h1>
+</div>
+<div class ="article-body">
 <%= link_to 'New article', new_article_path %>
 <table>
   <tr>
@@ -6,7 +9,7 @@
     <th>Text</th>
     <th colspan="3"></th>
   </tr>
- 
+
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
@@ -17,5 +20,5 @@
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
     </tr>
+
   <% end %>
-</table>
