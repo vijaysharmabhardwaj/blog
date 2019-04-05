@@ -1,16 +1,13 @@
-<p class="article-head">
-  <strong>Title:</strong>
+<strong>Title:</strong>
   <%= @article.title %>
 </p>
  
-<p class="article-body">
   <strong>Text:</strong>
   <%= @article.text %>
-</p>
- 
+
 <h2>Comments</h2>
 <%= render @article.comments %>
-<button id="togButton">Hide Comments</button> 
+
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
  

@@ -14,14 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(document).ready(function(){
-	var togB = $('#togButton')
-  togB.click(function(){
-  	$('.comment').toggle();
-  	if (togB.text() == 'Hide Comments') {
-  		togB.text('Show Comments');
-  	} else {
-  		togB.text('Hide Comments');
-  	}
-  });
-});
