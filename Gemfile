@@ -66,3 +66,5 @@ gem 'pry'
 #adding jquery to the rails app
 gem 'jquery-rails'
 
+gem 'bootstrap', '~>4.0.0'
+gem 'autoprefixer-rails'
